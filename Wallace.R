@@ -3,7 +3,15 @@
 
 #Antes de descargar Wallace se recomienda 
 # Actualizar R, R studio 
+# Se puede hacer con el siguiente código:
+install.packages("installr")
+library(installr)
+updateR()
+
 # Descargar Rtools - compilador de paquetes
+# Entrar al siguiente link y seguir instrucciones:
+# https://cran.r-project.org/bin/windows/Rtools/
+
 
 install.packages("wallace")
 library(wallace)
@@ -42,8 +50,6 @@ library(wallace)
 run_wallace()
 
 
-
-#
 
 
 
