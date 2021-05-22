@@ -1,6 +1,9 @@
 
 #Wallace
 
+#Antes de descargar Wallace se recomienda 
+# Actualizar R, R studio 
+# Descargar Rtools - compilador de paquetes
 
 install.packages("wallace")
 library(wallace)
@@ -18,14 +21,23 @@ library(maskRangeR)
 library(changeRangeR)
 1
 
-#Promblemas con changeRangeR
+#Problemas con changeRangeR
 install.packages("devtools")
 devtools::install_github("nathanvan/parallelsugar")
 devtools::install_github("https://github.com/andrepazv/changeRangeR/tree/paths_fix", dependencies= TRUE)
 # Cargar paquete
 library(changeRangeR)
 
+#Descargar ENMeval2.0 - Ecological Niche Models evaluation
+# Más información en
+## https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12261
 
+devtools::install_github("https://github.com/andrepazv/ENMeval/tree/bioclim_test", dependencies= TRUE)
+# Cargar ENMeval
+library(ENMeval)
+1
+
+#Iniciar Wallace
 library(wallace)
 run_wallace()
 
