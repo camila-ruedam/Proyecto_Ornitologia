@@ -29,7 +29,7 @@ library(maskRangeR)
 library(changeRangeR)
 1
 
-#Problemas con changeRangeR
+#Si hay Problemas con changeRangeR:
 install.packages("devtools")
 devtools::install_github("nathanvan/parallelsugar")
 devtools::install_github("https://github.com/andrepazv/changeRangeR/tree/paths_fix", dependencies= TRUE)
@@ -45,7 +45,9 @@ devtools::install_github("https://github.com/andrepazv/ENMeval/tree/bioclim_test
 library(ENMeval)
 1
 
-#Iniciar Wallace
+
+
+#### Iniciar Wallace
 library(wallace)
 run_wallace()
 
